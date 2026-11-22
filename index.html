@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uours Events | Wedding Planners & Decorators in Mumbai</title>
+<meta name="description" content="Wedding planning and decor in Goregaon West, Mumbai. Stage, mandap, engagement and reception setups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#2b1535; --plum2:#3d2150; --gold:#e8a317; --rose:#f6dfe2; --paper:#fff9f7; --ink:#2a1a30; --muted:#6b5a70; --card:#ffffff; --line:#ead4d8;
+  --bg:var(--paper); --fg:var(--ink);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1a0f21;--fg:#f4e9ee;--card:#2b1838;--line:#44274f;--muted:#b9a5c0;--rose:#2b1838}
+}
+:root[data-theme="dark"]{--bg:#1a0f21;--fg:#f4e9ee;--card:#2b1838;--line:#44274f;--muted:#b9a5c0;--rose:#2b1838}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Mukta,system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--plum);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;text-decoration:none;letter-spacing:.02em}
+.logo b{color:var(--gold)}
+nav a{margin-left:20px;text-decoration:none;font-size:15px;opacity:.9}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--plum);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:64px}
+.hero h1{font-size:clamp(40px,7vw,70px);font-weight:600}
+.hero p{max-width:30em;color:#e9d9ee;margin:18px 0 28px}
+.btn{display:inline-block;background:var(--gold);color:#2b1535;font-weight:600;padding:13px 24px;border-radius:999px;text-decoration:none;border:2px solid var(--gold)}
+.btn.alt{background:transparent;color:#fff;border-color:#ffffff66;margin-left:10px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.arch{justify-self:center;width:min(100%,320px);aspect-ratio:3/4;border-radius:999px 999px 14px 14px;border:3px solid var(--gold);padding:12px;position:relative}
+.arch::before{content:"";position:absolute;inset:12px;border-radius:999px 999px 6px 6px;
+  background:radial-gradient(circle at 50% 18%,#ffd36b 0 6%,transparent 7%),
+  radial-gradient(ellipse at 50% 100%,#e8a317aa,transparent 60%),
+  linear-gradient(180deg,#6a2f78,#a3406b 70%,#e8a317)}
+.arch::after{content:"";position:absolute;inset:-3px;border-radius:inherit;
+  background:repeating-radial-gradient(circle at 50% 0,transparent 0 11px,#e8a31700 11px);}
+.strip{background:var(--rose);border-bottom:1px solid var(--line)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:8px 34px;justify-content:center;padding-top:16px;padding-bottom:16px;font-weight:500}
+section{padding:68px 0}
+h2{font-size:clamp(32px,5vw,46px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:36em;margin:0 0 34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px 6px 28px 6px;padding:24px}
+.card h3{font-size:26px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{position:relative;overflow:hidden;aspect-ratio:1;border-radius:90px 90px 8px 8px;display:flex;align-items:flex-end;justify-content:center;padding:14px;color:#fff;font-weight:500;font-size:15px;text-align:center}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile span{position:relative;background:#0006;padding:2px 12px;border-radius:999px}
+.t1{background:linear-gradient(160deg,#6a2f78,#e8a317)}.t2{background:linear-gradient(160deg,#a3406b,#f2b6a0)}.t3{background:linear-gradient(160deg,#2b5a52,#e8a317)}
+.t4{background:linear-gradient(160deg,#3d2150,#d9708c)}.t5{background:linear-gradient(160deg,#c9802b,#6a2f78)}.t6{background:linear-gradient(160deg,#8c2f5a,#f5d27a)}
+.steps{counter-reset:s;display:grid;gap:14px;max-width:640px}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 20px 16px 62px;position:relative}
+.steps div::before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#2b1535;font-weight:600;display:grid;place-items:center}
+.steps b{display:block}
+.contact{background:var(--plum);color:#fff}
+.contact .lead{color:#e0cfe6}
+.contact address{font-style:normal;margin:20px 0;color:#e9d9ee}
+footer{padding:22px 0;text-align:center;font-size:14px;color:var(--muted)}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#08331a;font-weight:600;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px #0004;z-index:6}
+@media(max-width:720px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:36px}
+  .arch{width:200px;order:-1}
+  nav a:not(:last-child){display:none}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .btn.alt{margin:12px 0 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Uours<b>.</b></a>
+  <nav><a href="#services">Services</a><a href="#work">Our work</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Your wedding, set the way you imagined it</h1>
+    <p>Uours Events plans and decorates weddings in Mumbai. From the first sketch of your stage to the last flower on the night, one team handles it.</p>
+    <a class="btn" href="https://wa.me/917208700786?text=Hi%20Uours%20Events%2C%20I%27d%20like%20to%20plan%20an%20event." target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a class="btn alt" href="#work">See our work</a>
+  </div>
+  <div class="arch" role="img" aria-label="Illustration of a decorated wedding mandap arch"></div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span>Rated 4.8 on Google from 91 reviews</span>
+  <span>Based in Goregaon West, Mumbai</span>
+  <span>Weddings, engagements and receptions</span>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>What we do</h2>
+  <p class="lead">Pick one service or let us run the whole event. Every setup is designed around your venue, your families and your budget.</p>
+  <div class="grid">
+    <div class="card"><h3>Wedding planning</h3><p>Schedules, vendors, guest flow and day-of coordination, so you can enjoy your own wedding.</p></div>
+    <div class="card"><h3>Stage and mandap decor</h3><p>Floral stages, entrances and mandaps built to your theme and colors.</p></div>
+    <div class="card"><h3>Engagement and haldi</h3><p>Smaller functions with the same care, from backdrops to seating.</p></div>
+    <div class="card"><h3>Reception setups</h3><p>Lighting, props and venue styling that transform a banquet hall.</p></div>
+  </div>
+</div></section>
+
+<section id="work" style="background:var(--rose)"><div class="wrap">
+  <h2>Our work</h2>
+  <p class="lead">A look at the kinds of setups we create. Photos from real events go here.</p>
+  <div class="gal">
+    <div class="tile t1"><img src="photo1.jpg" alt="Wedding stage decor" loading="lazy" onerror="this.remove()"><span>Wedding stage</span></div>
+    <div class="tile t2"><img src="photo2.jpg" alt="Engagement decor" loading="lazy" onerror="this.remove()"><span>Engagement decor</span></div>
+    <div class="tile t3"><img src="photo3.jpg" alt="Entrance styling" loading="lazy" onerror="this.remove()"><span>Entrance styling</span></div>
+    <div class="tile t4"><img src="photo4.jpg" alt="Reception hall setup" loading="lazy" onerror="this.remove()"><span>Reception hall</span></div>
+    <div class="tile t5"><img src="photo5.jpg" alt="Mandap decor" loading="lazy" onerror="this.remove()"><span>Mandap</span></div>
+    <div class="tile t6"><img src="photo6.jpg" alt="Haldi setup" loading="lazy" onerror="this.remove()"><span>Haldi setup</span></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">Three steps from first message to your event day.</p>
+  <div class="steps">
+    <div><b>Tell us about your event</b>Share the date, venue, guest count and the look you have in mind.</div>
+    <div><b>Review the plan and quote</b>We send a design idea and a clear price before anything is booked.</div>
+    <div><b>We set up, you celebrate</b>Our team arrives early and handles the setup and any last-minute changes.</div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Plan your event with us</h2>
+  <p class="lead">Message us with your date and venue and we will reply with ideas.</p>
+  <address>FF-16, Harmony Mall, Goregaon Link Road,<br>Goregaon West, Mumbai 400104<br>Phone: <a href="tel:+917208700786">+91 72087 00786</a></address>
+  <a class="btn" href="https://wa.me/917208700786?text=Hi%20Uours%20Events%2C%20I%27d%20like%20to%20plan%20an%20event." target="_blank" rel="noopener">Chat on WhatsApp</a>
+</div></section>
+</main>
+
+<footer>© Uours Events, Mumbai</footer>
+<a class="wa" href="https://wa.me/917208700786" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
